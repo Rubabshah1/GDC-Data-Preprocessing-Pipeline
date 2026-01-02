@@ -1,5 +1,5 @@
 # GDC-Data-Preprocessing-Pipeline
-This script downloads open-access RNA-Seq gene expression data from the **NCI Genomic Data Commons (GDC)** [https://gdc.cancer.gov](https://gdc.cancer.gov) for selected cancer primary sites and generates expression matrices (TPM, FPKM, and FPKM-UQ) for **tumor and normal samples separately**.
+This script downloads open-access RNA-Seq gene expression data from the NCI Genomic Data Commons (GDC) [https://gdc.cancer.gov](https://gdc.cancer.gov) for selected cancer primary sites and generates expression matrices (TPM, FPKM, and FPKM-UQ) for tumor and normal samples separately.
 
 Data are queried from the GDC Files and Data APIs, downloaded in TSV format, parsed, filtered, and finally written to CSV matrices.
 
@@ -7,9 +7,9 @@ Data are queried from the GDC Files and Data APIs, downloaded in TSV format, par
 
 ## Features
 
-* Queries RNA-Seq **Gene Expression Quantification** metadata from GDC
+* Queries RNA-Seq Gene Expression Quantification metadata from GDC
 * Downloads expression files in parallel using `ThreadPoolExecutor`
-* Automatically handles **gzip-compressed or plain TSV files**
+* Automatically handles gzip-compressed or plain TSV files
 * Filters out non-coding `N_` gene entries
 * Extracts required expression fields:
 
